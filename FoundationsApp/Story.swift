@@ -7,8 +7,18 @@
 //
 
 import Foundation
+import UIKit
 
 class Story {
-    var oi: String = ""
-    var tchau: String = ""
+    var heroImage: UIImage
+    var title: String
+    var description: String
+    var text: String
+    
+    init (heroImageReceived: UIImage, titleReceived: String, descriptionReceived: String, textReceived: String) {
+        self.heroImage = heroImageReceived
+        self.title = titleReceived
+        self.description = descriptionReceived
+        self.text = textReceived
+    }
 }
