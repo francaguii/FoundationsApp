@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-
+// Bora programar
 class Story {
     var heroImage: UIImage
     var title: String
