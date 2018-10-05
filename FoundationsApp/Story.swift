@@ -14,11 +14,13 @@ class Story {
     var title: String
     var description: String
     var text: String
+    var bomdia: Int
     
     init (heroImageReceived: UIImage, titleReceived: String, descriptionReceived: String, textReceived: String) {
         self.heroImage = heroImageReceived
         self.title = titleReceived
         self.description = descriptionReceived
         self.text = textReceived
+        
     }
 }
