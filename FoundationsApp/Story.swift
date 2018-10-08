@@ -10,15 +10,15 @@ import Foundation
 import UIKit
 
 class Story {
-    var heroImage: UIImage
-    var title: String
-    var description: String
+    var image: UIImage
+    var headline: String
+    var brief: String
     var text: String
     
-    init (heroImageReceived: UIImage, titleReceived: String, descriptionReceived: String, textReceived: String) {
-        self.heroImage = heroImageReceived
-        self.title = titleReceived
-        self.description = descriptionReceived
+    init (imageReceived: UIImage, headlineReceived: String, briefReceived: String, textReceived: String) {
+        self.image = imageReceived
+        self.headline = headlineReceived
+        self.brief = briefReceived
         self.text = textReceived
     }
 }

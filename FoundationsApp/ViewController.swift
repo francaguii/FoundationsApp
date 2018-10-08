@@ -12,9 +12,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var storyTableView: UITableView!
     
-    let story1 = Story(heroImageReceived: #imageLiteral(resourceName: "example"), titleReceived: "Lorem Ipsum", descriptionReceived: "Lorem Ipsum", textReceived: "Lorem Ipsum")
-    let story2 = Story(heroImageReceived: #imageLiteral(resourceName: "example"), titleReceived: "Lorem Ipsum", descriptionReceived: "Lorem Ipsum", textReceived: "Lorem Ipsum")
-    let story3 = Story(heroImageReceived: #imageLiteral(resourceName: "example"), titleReceived: "Lorem Ipsum", descriptionReceived: "Lorem Ipsum", textReceived: "Lorem Ipsum")
+    let story1 = Story(imageReceived: #imageLiteral(resourceName: "tullawine"), headlineReceived: "Lorem Ipsum", briefReceived: "Lorem Ipsum", textReceived: "Lorem Ipsum")
+    let story2 = Story(imageReceived: #imageLiteral(resourceName: "example"), headlineReceived: "Lorem Ipsum", briefReceived: "Lorem Ipsum", textReceived: "Lorem Ipsum")
+    let story3 = Story(imageReceived: #imageLiteral(resourceName: "tullawine"), headlineReceived: "Lorem Ipsum", briefReceived: "Lorem Ipsum", textReceived: "Lorem Ipsum")
     
     var stories: [Story] = []
     
@@ -38,9 +38,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let index = indexPath.row
         
-        cell.storyImage.image = stories[index].heroImage
-        cell.storyHeadline.text = stories[index].title
-        cell.storyBrief.text = stories[index].description
+        cell.storyImage.image = stories[index].image
+        cell.storyHeadline.text = stories[index].headline
+        cell.storyBrief.text = stories[index].brief
         
         return cell
     }
