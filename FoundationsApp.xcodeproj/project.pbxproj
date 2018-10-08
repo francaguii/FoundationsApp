@@ -63,10 +63,10 @@
 				A9C0826221628028005BF065 /* AppDelegate.swift */,
 				A9C0826421628028005BF065 /* ViewController.swift */,
 				A9C0826621628028005BF065 /* Main.storyboard */,
-				329132282167F2CA00F77A3D /* DetailStoryViewController.swift */,
 				A9C082692162802A005BF065 /* Assets.xcassets */,
 				A9C0826B2162802A005BF065 /* LaunchScreen.storyboard */,
 				A9C0826E2162802A005BF065 /* Info.plist */,
+				329132282167F2CA00F77A3D /* DetailStoryViewController.swift */,
 				A9C0827421628074005BF065 /* Story.swift */,
 				A9C6E1BA2167DEC30074D913 /* StoryTableViewCell.swift */,
 			);

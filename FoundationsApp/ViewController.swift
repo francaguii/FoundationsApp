@@ -48,6 +48,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 350
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "" {
+            let index = storyTableView.indexPathForSelectedRow!
+            let storySelected = stories[index.row]
+            let nextDetailStoryViewController = segue.destination as! DetailStoryViewController
+            nextDetailStoryViewController.detailStory = storySelected
+            
+            
+    }
 
 }
 
