@@ -13,6 +13,7 @@ class DetailStoryViewController: UIViewController {
     
     var detailStory: Story!
     
+    @IBOutlet weak var detailScrollView: UIScrollView!
     
     @IBOutlet weak var detailImage: UIImageView!
     @IBOutlet weak var detailHeadline: UILabel!
@@ -35,18 +36,17 @@ class DetailStoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        detailScrollView.bottomAnchor.constraint(equalTo: detailText.bottomAnchor).isActive = true
+        
         detailImage.image = detailStory.image
         detailHeadline.text = detailStory.headline
         detailDescription.text = detailStory.brief
         detailText.text = detailStory.text
         
-        
-        
     }
     
     
-        
-    }
     
+}
 
 
