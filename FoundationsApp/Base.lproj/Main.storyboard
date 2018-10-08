@@ -94,8 +94,11 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ix-rh-3UH">
                                 <rect key="frame" x="0.0" y="65" width="375" height="601"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ifi-7c-YMR">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ifi-7c-YMR">
                                         <rect key="frame" x="0.0" y="112" width="375" height="245.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="245.5" id="AF9-Dj-xC2"/>
+                                        </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Story Headline" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FmU-9p-PPh">
                                         <rect key="frame" x="16" y="27" width="343" height="34"/>
@@ -122,11 +125,11 @@
                                 <constraints>
                                     <constraint firstItem="ZJD-8k-cb6" firstAttribute="width" secondItem="8ix-rh-3UH" secondAttribute="width" multiplier="0.915" id="3D0-1T-fhJ"/>
                                     <constraint firstItem="ZJD-8k-cb6" firstAttribute="top" secondItem="8ix-rh-3UH" secondAttribute="top" constant="370" id="AI4-ri-5zo"/>
+                                    <constraint firstItem="ifi-7c-YMR" firstAttribute="width" secondItem="8ix-rh-3UH" secondAttribute="width" id="Jpe-a1-m7T"/>
                                     <constraint firstAttribute="trailing" secondItem="ZJD-8k-cb6" secondAttribute="trailing" constant="16" id="LtE-Tn-3Ot"/>
                                     <constraint firstAttribute="bottom" secondItem="ZJD-8k-cb6" secondAttribute="bottom" constant="109" placeholder="YES" id="Mw0-Av-2P5"/>
                                     <constraint firstItem="ZJD-8k-cb6" firstAttribute="leading" secondItem="8ix-rh-3UH" secondAttribute="leading" constant="16" id="WjC-hI-V7R"/>
-                                    <constraint firstItem="ifi-7c-YMR" firstAttribute="top" secondItem="8ix-rh-3UH" secondAttribute="top" constant="112" id="bRb-Ar-ImI"/>
-                                    <constraint firstItem="ifi-7c-YMR" firstAttribute="width" secondItem="8ix-rh-3UH" secondAttribute="width" constant="200" id="h4a-2H-M72"/>
+                                    <constraint firstItem="ifi-7c-YMR" firstAttribute="top" secondItem="8ix-rh-3UH" secondAttribute="top" constant="112" id="hRc-91-SBa"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
