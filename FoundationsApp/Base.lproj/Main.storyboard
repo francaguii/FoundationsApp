@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -108,23 +109,22 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Brief Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyh-yc-1mh">
-                                        <rect key="frame" x="16" y="64" width="128" height="21"/>
+                                        <rect key="frame" x="16" y="64" width="333" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJD-8k-cb6">
-                                        <rect key="frame" x="16" y="370" width="343" height="122"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJD-8k-cb6">
+                                        <rect key="frame" x="16" y="370" width="343" height="223.5"/>
                                         <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hr2-ww-iWn">
-                                        <rect key="frame" x="263" y="33" width="46" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hr2-ww-iWn">
+                                        <rect key="frame" x="18" y="563" width="55" height="30"/>
+                                        <state key="normal" title="Contato"/>
                                         <connections>
                                             <action selector="makeCall:" destination="76f-jI-TVA" eventType="touchUpInside" id="tJG-qD-vL9"/>
                                         </connections>
@@ -133,6 +133,7 @@
                                 <constraints>
                                     <constraint firstItem="ZJD-8k-cb6" firstAttribute="width" secondItem="8ix-rh-3UH" secondAttribute="width" multiplier="0.915" id="3D0-1T-fhJ"/>
                                     <constraint firstItem="ZJD-8k-cb6" firstAttribute="top" secondItem="8ix-rh-3UH" secondAttribute="top" constant="370" id="AI4-ri-5zo"/>
+                                    <constraint firstItem="hr2-ww-iWn" firstAttribute="bottom" secondItem="ZJD-8k-cb6" secondAttribute="bottom" id="ESd-b2-zc0"/>
                                     <constraint firstItem="ifi-7c-YMR" firstAttribute="width" secondItem="8ix-rh-3UH" secondAttribute="width" id="Jpe-a1-m7T"/>
                                     <constraint firstAttribute="trailing" secondItem="ZJD-8k-cb6" secondAttribute="trailing" constant="16" id="LtE-Tn-3Ot"/>
                                     <constraint firstAttribute="bottom" secondItem="ZJD-8k-cb6" secondAttribute="bottom" constant="109" placeholder="YES" id="Mw0-Av-2P5"/>
