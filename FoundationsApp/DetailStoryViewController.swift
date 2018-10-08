@@ -19,6 +19,19 @@ class DetailStoryViewController: UIViewController {
     @IBOutlet weak var detailDescription: UILabel!
     @IBOutlet weak var detailText: UILabel!
     
+    @IBAction func makeCall(_ sender: UIButton) {
+        
+        guard let contact = sender.titleLabel?.text, let url = URL(string:"1234-5678://\(contact)") else{
+            return
+    }
+        
+        UIApplication.shared.open(url)
+    }
+    
+    override var prefersStatusBarHidden: Bool{
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,5 +45,8 @@ class DetailStoryViewController: UIViewController {
     }
     
     
-}
+        
+    }
+    
+
 
