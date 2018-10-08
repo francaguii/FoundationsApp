@@ -20,13 +20,29 @@ class DetailStoryViewController: UIViewController {
     @IBOutlet weak var detailDescription: UILabel!
     @IBOutlet weak var detailText: UILabel!
     
+    
+    
     @IBAction func makeCall(_ sender: UIButton) {
         
-        guard let contact = sender.titleLabel?.text, let url = URL(string:"1234-5678://\(contact)") else{
+/*guard let contact = sender.titleLabel?.text, let url = URL(string:"1234-5678://\(contact)") else{
             return
     }
+    UIApplication.shared.open(url)*/
         
-        UIApplication.shared.open(url)
+        
+        callNumber(phoneNumber: "81999999999")
+    }
+    
+    @available(iOS 10.0, *)
+    func callNumber(phoneNumber:String) {
+        
+        if let phoneCallURL = URL(string: "tel://\(phoneNumber)") {
+            
+            let application:UIApplication = UIApplication.shared
+            if (application.canOpenURL(phoneCallURL)) {
+                application.open(phoneCallURL, options: [:], completionHandler: nil)
+            }
+        }
     }
     
     override var prefersStatusBarHidden: Bool{
