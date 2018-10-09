@@ -21,12 +21,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         
+
         stories.append(story1)
         stories.append(story2)
         stories.append(story3)
         
         storyTableView.delegate = self
         storyTableView.dataSource = self
+
     }
     
     // Quantidade de cells
