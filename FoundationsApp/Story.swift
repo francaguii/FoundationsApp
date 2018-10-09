@@ -20,5 +20,6 @@ class Story {
         self.headline = headlineReceived
         self.brief = briefReceived
         self.text = textReceived
+
     }
 }
