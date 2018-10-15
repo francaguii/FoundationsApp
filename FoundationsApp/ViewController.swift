@@ -24,7 +24,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // Search
     
     let searchController = UISearchController(searchResultsController: nil)
-    
+
     var stories: [Story] = []
     var filteredStories = [Story]()
     
@@ -113,6 +113,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetailsSegue" {
+            let backItem = UIBarButtonItem()
+            backItem.title = "Voltar"
+            navigationItem.backBarButtonItem = backItem
+            
             let index = storyTableView.indexPathForSelectedRow!
             //let storySelected = stories[index.row]
             
