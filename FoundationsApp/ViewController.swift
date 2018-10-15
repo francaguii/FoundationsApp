@@ -36,6 +36,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "Buscar"
+        searchController.searchBar.tintColor = #colorLiteral(red: 0.7960784314, green: 0.3098039216, blue: 0.5490196078, alpha: 1)
+        searchController.searchBar.setValue("Cancelar", forKey: "_cancelButtonText")
         navigationItem.searchController = searchController
         definesPresentationContext = true
         
