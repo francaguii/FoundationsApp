@@ -127,9 +127,6 @@
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hr2-ww-iWn">
                                         <rect key="frame" x="18" y="641.5" width="55" height="30"/>
                                         <state key="normal" title="Contato"/>
-                                        <connections>
-                                            <action selector="makeCall:" destination="76f-jI-TVA" eventType="touchUpInside" id="tJG-qD-vL9"/>
-                                        </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ifi-7c-YMR">
                                         <rect key="frame" x="0.0" y="189" width="375" height="245.5"/>
@@ -161,6 +158,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gk3-CG-f6g"/>
                     </view>
+                    <navigationItem key="navigationItem" id="WAa-bo-aOl">
+                        <barButtonItem key="rightBarButtonItem" title="Contato" id="PCZ-1V-Vff">
+                            <connections>
+                                <action selector="makeCall:" destination="76f-jI-TVA" id="aZv-6J-Oa4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="detailDescription" destination="fyh-yc-1mh" id="eYU-lp-ppG"/>
                         <outlet property="detailHeadline" destination="FmU-9p-PPh" id="I5m-0E-9UL"/>

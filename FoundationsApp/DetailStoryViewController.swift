@@ -22,16 +22,17 @@ class DetailStoryViewController: UIViewController {
     
     
     
-    @IBAction func makeCall(_ sender: UIButton) {
+    @IBAction func makeCall(_ sender: Any) {
         
-/*guard let contact = sender.titleLabel?.text, let url = URL(string:"1234-5678://\(contact)") else{
-            return
-    }
-    UIApplication.shared.open(url)*/
+        /*guard let contact = sender.titleLabel?.text, let url = URL(string:"1234-5678://\(contact)") else{
+         return
+         }
+         UIApplication.shared.open(url)*/
         
         
         callNumber(phoneNumber: "81999999999")
     }
+    
     
     @available(iOS 10.0, *)
     func callNumber(phoneNumber:String) {
