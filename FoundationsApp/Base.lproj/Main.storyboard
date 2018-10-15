@@ -107,7 +107,7 @@
                                         <rect key="frame" x="16" y="1" width="343" height="105"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="31"/>
-                                        <color key="textColor" red="0.79420660396138154" green="0.30938582755964605" blue="0.55065701755414598" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.79607843137254897" green="0.30980392156862746" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Brief Description" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyh-yc-1mh">
@@ -124,10 +124,6 @@
                                         <color key="textColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hr2-ww-iWn">
-                                        <rect key="frame" x="18" y="641.5" width="55" height="30"/>
-                                        <state key="normal" title="Contato"/>
-                                    </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ifi-7c-YMR">
                                         <rect key="frame" x="0.0" y="189" width="375" height="245.5"/>
                                         <constraints>
@@ -139,7 +135,6 @@
                                 <constraints>
                                     <constraint firstItem="ZJD-8k-cb6" firstAttribute="width" secondItem="8ix-rh-3UH" secondAttribute="width" multiplier="0.915" id="3D0-1T-fhJ"/>
                                     <constraint firstItem="ZJD-8k-cb6" firstAttribute="top" secondItem="8ix-rh-3UH" secondAttribute="top" constant="443" id="AI4-ri-5zo"/>
-                                    <constraint firstItem="hr2-ww-iWn" firstAttribute="bottom" secondItem="ZJD-8k-cb6" secondAttribute="bottom" id="ESd-b2-zc0"/>
                                     <constraint firstItem="ifi-7c-YMR" firstAttribute="width" secondItem="8ix-rh-3UH" secondAttribute="width" id="Jpe-a1-m7T"/>
                                     <constraint firstAttribute="trailing" secondItem="ZJD-8k-cb6" secondAttribute="trailing" constant="16" id="LtE-Tn-3Ot"/>
                                     <constraint firstAttribute="bottom" secondItem="ZJD-8k-cb6" secondAttribute="bottom" constant="109" placeholder="YES" id="Mw0-Av-2P5"/>
@@ -159,7 +154,8 @@
                         <viewLayoutGuide key="safeArea" id="gk3-CG-f6g"/>
                     </view>
                     <navigationItem key="navigationItem" id="WAa-bo-aOl">
-                        <barButtonItem key="rightBarButtonItem" title="Contato" id="PCZ-1V-Vff">
+                        <barButtonItem key="rightBarButtonItem" title="Contato" style="done" id="PCZ-1V-Vff">
+                            <color key="tintColor" red="0.79607843137254897" green="0.30980392156862746" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="makeCall:" destination="76f-jI-TVA" id="aZv-6J-Oa4"/>
                             </connections>
