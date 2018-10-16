@@ -14,6 +14,7 @@ class StoryTableViewCell: UITableViewCell {
     @IBOutlet weak var storyImage: UIImageView!    
     @IBOutlet weak var storyHeadline: UILabel!
     @IBOutlet weak var storyBrief: UILabel!
+    @IBOutlet weak var storyCell: UIView!
     
 }
 
