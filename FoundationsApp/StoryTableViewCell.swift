@@ -16,3 +16,5 @@ class StoryTableViewCell: UITableViewCell {
     @IBOutlet weak var storyBrief: UILabel!
     
 }
+
+

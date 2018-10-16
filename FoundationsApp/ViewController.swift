@@ -48,8 +48,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         storyTableView.delegate = self
         storyTableView.dataSource = self
-
+        
     }
+    
     
     // Search
     
@@ -82,26 +83,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // Populando a UITableView
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = storyTableView.dequeueReusableCell(withIdentifier: "storyCell", for: indexPath) as! StoryTableViewCell
         
-        let story: Story
+            let cell = storyTableView.dequeueReusableCell(withIdentifier: "storyCell", for: indexPath) as! StoryTableViewCell
         
-        if isFiltering(){
-            story = filteredStories[indexPath.row]
-        } else {
-            story = stories[indexPath.row]
-        }
+            let story: Story
         
-       // cell.storyImage.image = stories[index].image
-       // cell.storyHeadline.text = stories[index].headline
-       // cell.storyBrief.text = stories[index].brief
+            if isFiltering(){
+                story = filteredStories[indexPath.row]
+            } else {
+                story = stories[indexPath.row]
+            }
         
-        cell.storyImage.image = story.image
-        cell.storyHeadline.text = story.headline
-        cell.storyBrief.text = story.brief
+            cell.storyImage.image = story.image
+            cell.storyHeadline.text = story.headline
+            cell.storyBrief.text = story.brief
         
-        return cell
-    }
+            return cell
+}
     
     // Tamanho da TableViewCell
     
@@ -134,6 +132,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
     }
 
-}
+    }
         
+
 
