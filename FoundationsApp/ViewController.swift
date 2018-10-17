@@ -14,6 +14,15 @@ extension ViewController: UISearchResultsUpdating{
     }
 }
 
+extension UIView {
+    func round(corners: UIRectCorner, radius: CGFloat) {
+        let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        let mask = CAShapeLayer()
+        mask.path = path.cgPath
+        self.layer.mask = mask
+    }
+}
+
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var storyTableView: UITableView!
@@ -102,11 +111,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         // customizacao da cell
         
-        cell.storyCell.layer.shadowColor = UIColor.lightGray.cgColor
-        cell.storyCell.layer.shadowOpacity = 1.0
-        cell.storyCell.layer.masksToBounds = false
-        cell.storyCell.layer.cornerRadius = 4.0
-        cell.storyCell.layer.shadowOffset = CGSize(width: 0, height: 1.0)
+            cell.storyCell.layer.shadowColor = UIColor.lightGray.cgColor
+            cell.storyCell.layer.shadowOpacity = 1.0
+            cell.storyCell.layer.shadowRadius = 20
+            cell.storyCell.layer.shadowOffset = CGSize(width: 0, height: 1.0)
+            cell.storyCell.layer.masksToBounds = false
+            cell.storyCell.layer.cornerRadius = 10.0
+        
+            cell.storyImage.round(corners: [.topLeft , .topRight], radius: 10)
+            cell.storyImage.clipsToBounds = true
         
             return cell
 }
@@ -147,8 +160,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
             
     }
-
-
 }
 
 
