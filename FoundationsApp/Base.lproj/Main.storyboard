@@ -19,7 +19,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4KB-pg-NwR">
                                 <rect key="frame" x="0.0" y="64" width="375" height="748"/>
-                                <color key="backgroundColor" red="1" green="0.81823312010000004" blue="0.87474002370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="0.81960784313725488" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -62,7 +62,7 @@
                                                     </constraints>
                                                 </view>
                                             </subviews>
-                                            <color key="backgroundColor" red="1" green="0.9511213196647087" blue="0.96114538063215371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" red="1" green="0.81960784313725488" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstItem="vq1-Er-swr" firstAttribute="leading" secondItem="0ot-Fk-pJP" secondAttribute="leadingMargin" id="Plj-rE-bNQ"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="vq1-Er-swr" secondAttribute="bottom" constant="10" id="lZp-Ty-thU"/>

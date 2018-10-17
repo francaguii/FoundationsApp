@@ -62,6 +62,76 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     
+//CÓDIGO PARA TEXT FIELD DE SUBMISSÃO DE HISTÓRIAS
+    
+   // var i = 1
+   // var y = 136
+    
+   // override func viewDidLoad() {
+     //   super.viewDidLoad()
+       // managedtextfield()
+       // managelabel()
+       // managebutton()
+        
+   // }
+   // func managedtextfield(){
+     //   for i in 1...4{
+       // let myfield:UITextField = UITextField(frame:CGRect(x: 23, y: y, width: 340, height: 30))
+       // myfield.borderStyle = .roundedRect
+            
+       // self.view.addSubview(myfield)
+       // y = y + 52
+            
+         //   if i == 1{//Primeira textfield
+           //     myfield.placeholder = "Nome"
+           //     myfield.tag = 1
+           // }
+           // else if i == 2{//Segunda textfield
+           //     myfield.placeholder = "Idade"
+           //     myfield.tag = 2
+           // }
+           // else if i == 3{//Terceira textfield
+           //     myfield.placeholder = "Telefone para contato"
+           //     myfield.tag = 3
+           // }
+           // else if i == 4{//Quarta textfield
+           //     myfield.placeholder = "O que você faz e/ou sua história de empreendedorismo"
+           //     myfield.tag = 4
+           // }
+       // }
+            
+            
+   // }
+    
+    //TENTEI CONECTAR O BOTÃO DE ENVIAR HISTÓRIA E NÃO CONSEGUI!!!!
+    
+   // func managelabel(){
+     //   let mylbl:UILabel = UILabel(frame: CGRect(x: 16, y: 80, width: 343, height: 21))
+     //   mylbl.text = "Enviar História"
+     //   mylbl.textAlignment = .center
+     //   mylbl.textColor = #colorLiteral(red: 0.7960784314, green: 0.3098039216, blue: 0.5490196078, alpha: 1)
+    //   self.view.addSubview(mylbl)
+   // }
+    
+  //  func managebutton(){
+    //    let mybtn:UIButton = UIButton(frame: CGRect(x:141, y: 430, width: 93, height: 30))
+    //    mybtn.setTitle("Enviar", for: .normal)
+    //    mybtn.setTitleColor(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), for: .normal)
+    //    mybtn.backgroundColor = #colorLiteral(red: 0.7960784314, green: 0.3098039216, blue: 0.5490196078, alpha: 1)
+    //    mybtn.addTarget(self, action:
+    //        #selector(valuechange), for: .touchUpInside)
+    //    self.view.addSubview(mybtn)
+  //  }
+    
+  //  @objc func valuechange(){
+    //    print("Botão é Apertado")
+  //  }
+    
+    
+    
+    
+    
+    
     // Search
     
     func searchBarIsEmpty() -> Bool {
