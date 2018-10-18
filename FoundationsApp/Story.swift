@@ -14,12 +14,14 @@ class Story {
     var headline: String
     var brief: String
     var text: String
+    var phone: String
     
-    init (imageReceived: UIImage, headlineReceived: String, briefReceived: String, textReceived: String) {
+    init (imageReceived: UIImage, headlineReceived: String, briefReceived: String, textReceived: String, phoneReceived: String) {
         self.image = imageReceived
         self.headline = headlineReceived
         self.brief = briefReceived
         self.text = textReceived
+        self.phone = phoneReceived
 
     }
 }
