@@ -13,7 +13,7 @@ class registerStoryViewController: UIViewController {
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var contactTextField: UITextField!
-    @IBOutlet weak var storyTextField: UITextField!
+    @IBOutlet weak var storyTextView: UITextView!
     
     var name: String = ""
     var contact: String = ""
@@ -22,7 +22,7 @@ class registerStoryViewController: UIViewController {
     @IBAction func sendButton(_ sender: UIButton) {
         name = nameTextField.text!
         contact = contactTextField.text!
-        story = storyTextField.text!
+        story = storyTextView.text!
         
         print(name)
         print(contact)
