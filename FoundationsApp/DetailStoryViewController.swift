@@ -20,8 +20,6 @@ class DetailStoryViewController: UIViewController {
     @IBOutlet weak var detailDescription: UILabel!
     @IBOutlet weak var detailText: UILabel!
     
-    
-    
     @IBAction func makeCall(_ sender: Any) {
         
         /*guard let contact = sender.titleLabel?.text, let url = URL(string:"1234-5678://\(contact)") else{
@@ -30,12 +28,12 @@ class DetailStoryViewController: UIViewController {
          UIApplication.shared.open(url)*/
         
         
-        callNumber(phoneNumber: "81999999999")
+        callNumber(phoneNumber: detailStory.phone)
     }
     
     
     @available(iOS 10.0, *)
-    func callNumber(phoneNumber:String) {
+    func callNumber(phoneNumber: String) {
         
         if let phoneCallURL = URL(string: "tel://\(phoneNumber)") {
             
@@ -47,7 +45,7 @@ class DetailStoryViewController: UIViewController {
     }
     
     override var prefersStatusBarHidden: Bool{
-        return true
+        return false
     }
     
     override func viewDidLoad() {
@@ -59,6 +57,7 @@ class DetailStoryViewController: UIViewController {
         detailHeadline.text = detailStory.headline
         detailDescription.text = detailStory.brief
         detailText.text = detailStory.text
+        
         
     }
     
