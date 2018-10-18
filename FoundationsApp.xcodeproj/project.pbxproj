@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32576AC02179382700B0F027 /* registerStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32576ABF2179382700B0F027 /* registerStoryViewController.swift */; };
 		329132292167F2CA00F77A3D /* DetailStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329132282167F2CA00F77A3D /* DetailStoryViewController.swift */; };
 		A9C0826321628028005BF065 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C0826221628028005BF065 /* AppDelegate.swift */; };
 		A9C0826521628028005BF065 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C0826421628028005BF065 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32576ABF2179382700B0F027 /* registerStoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerStoryViewController.swift; sourceTree = "<group>"; };
 		329132282167F2CA00F77A3D /* DetailStoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStoryViewController.swift; sourceTree = "<group>"; };
 		A9C0825F21628028005BF065 /* FoundationsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoundationsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9C0826221628028005BF065 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				329132282167F2CA00F77A3D /* DetailStoryViewController.swift */,
 				A9C0827421628074005BF065 /* Story.swift */,
 				A9C6E1BA2167DEC30074D913 /* StoryTableViewCell.swift */,
+				32576ABF2179382700B0F027 /* registerStoryViewController.swift */,
 			);
 			path = FoundationsApp;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				A9C0826521628028005BF065 /* ViewController.swift in Sources */,
 				A9C0826321628028005BF065 /* AppDelegate.swift in Sources */,
 				A9C0827521628074005BF065 /* Story.swift in Sources */,
+				32576AC02179382700B0F027 /* registerStoryViewController.swift in Sources */,
 				329132292167F2CA00F77A3D /* DetailStoryViewController.swift in Sources */,
 				A9C6E1BB2167DEC30074D913 /* StoryTableViewCell.swift in Sources */,
 			);
