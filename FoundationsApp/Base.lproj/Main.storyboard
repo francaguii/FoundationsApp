@@ -256,7 +256,6 @@
                                 </state>
                                 <connections>
                                     <action selector="sendButton:" destination="9Gi-gC-mzj" eventType="touchUpInside" id="kBC-WV-Wh2"/>
-                                    <segue destination="iwj-bc-uzJ" kind="show" id="PV4-9F-5Co"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="te4-Uo-ZuX">

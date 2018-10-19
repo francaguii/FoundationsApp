@@ -35,7 +35,13 @@ class RegisterStoryViewController: UIViewController {
         print(rstory.contact)
         print(rstory.story)
         
-        self.performSegue(withIdentifier: "mudarTelaConfirmacao", sender: self)
+        let alertController = UIAlertController(title: "Registro realizado com sucesso!", message:
+            "Iremos analisar sua história e em breve entraremos em contato. Aguarde!", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
+            self.navigationController?.popToRootViewController(animated: true)
+        }))
+        
+       self.present(alertController, animated: true, completion: nil)
         
     }
     
