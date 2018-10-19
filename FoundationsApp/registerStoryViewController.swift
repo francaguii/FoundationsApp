@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class registerStoryViewController: UIViewController {
+class RegisterStoryViewController: UIViewController {
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var contactTextField: UITextField!
@@ -18,17 +18,24 @@ class registerStoryViewController: UIViewController {
     var name: String = ""
     var contact: String = ""
     var story: String = ""
+
+    
+    lazy var rstory = RegisteredStory(nameReceived: name, contactReceived: contact, storyReceived: story)
+    
+    lazy var registeredStories: [RegisteredStory] = []
     
     @IBAction func sendButton(_ sender: UIButton) {
-        name = nameTextField.text!
-        contact = contactTextField.text!
-        story = storyTextView.text!
+        rstory.name = name
+        rstory.contact = contact
+        rstory.story = story
         
-        print(name)
-        print(contact)
-        print(story)
+        registeredStories.append(rstory)
+        
+        print(rstory.name)
+        print(rstory.contact)
+        print(rstory.story)
         
     }
 
     
-    }
+}
