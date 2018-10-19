@@ -25,9 +25,9 @@ class RegisterStoryViewController: UIViewController {
     lazy var registeredStories: [RegisteredStory] = []
     
     @IBAction func sendButton(_ sender: UIButton) {
-        rstory.name = name
-        rstory.contact = contact
-        rstory.story = story
+        rstory.name = nameTextField.text!
+        rstory.contact = contactTextField.text!
+        rstory.story = storyTextView.text!
         
         registeredStories.append(rstory)
         
@@ -35,7 +35,10 @@ class RegisterStoryViewController: UIViewController {
         print(rstory.contact)
         print(rstory.story)
         
+        self.performSegue(withIdentifier: "mudarTelaConfirmacao", sender: self)
+        
     }
+    
 
     
 }
